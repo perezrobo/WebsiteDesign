@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me • Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html">
+          <span class="logo" aria-hidden="true"></span>
+          <span>My Portfolio</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <section class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h1>About Me</h1>
+            <p>Hello! My name is <strong>First Last</strong>. I’m a student at <em>Belen Jesuit Preparatory School</em> in Miami, FL. This page highlights my extracurricular involvement in clubs, sports, and service.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLUB INVOLVEMENT -->
+      <section class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Club Involvement</h2>
+            <p>I am an active member of several student organizations that allow me to grow my leadership and collaboration skills. Through clubs, I have worked on projects, organized events, and contributed to the Belen community.</p>
+            <ul>
+              <li><strong>Robotics Club</strong> — Designed, built, and programmed robots for competition.</li>
+              <li><strong>Innovation & Design Club</strong> — Collaborated on creative projects and mentored peers.</li>
+              <li><strong>STEM Outreach</strong> — Helped run events to promote STEM in the local community.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPORTS -->
+      <section class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Sports</h2>
+            <p>Sports have been a key part of my time at Belen, helping me learn teamwork, discipline, and perseverance.</p>
+            <ul>
+              <li><strong>Basketball</strong> — Played on the JV team, focusing on defense and teamwork.</li>
+              <li><strong>Swimming</strong> — Competed in freestyle events and improved personal times each season.</li>
+              <li><strong>Intramural Sports</strong> — Participated in community-building events with classmates.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE -->
+      <section class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Service</h2>
+            <p>Service is central to our Jesuit values, and I take pride in giving back to the community through meaningful experiences.</p>
+            <ul>
+              <li><strong>Campus Ministry Projects</strong> — Assisted with retreats and student formation programs.</li>
+              <li><strong>Local Food Drives</strong> — Helped collect, sort, and distribute meals to families in need.</li>
+              <li><strong>STEM Mentorship</strong> — Volunteered at middle school events to inspire future innovators.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <small>© <span id="y">2025</span> Your Name. Built for Honors Design & Innovation.</small>
+        <small><a href="#">Back to top ↑</a></small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

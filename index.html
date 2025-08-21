@@ -1,2 +1,122 @@
-<p>Hello World</p>
-<h>BIG WORDS</h>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Student Portfolio • Honors Design & Innovation</title>
+    <meta name="description" content="A simple, accessible portfolio template for GitHub Pages using only HTML and CSS." />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html" aria-current="page">
+          <span class="logo" aria-hidden="true"></span>
+          <span>My Portfolio</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="grid">
+          <div class="card">
+            <div class="card-inner">
+              <span class="tag">Student • Engineer • Maker</span>
+              <h1>Hello, I'm <em>First Last</em>—a high school innovator building useful things.</h1>
+              <p class="lead">This site documents my projects for Honors Design & Innovation. You'll find rapid prototypes, write-ups, and reflections. Everything here is built with plain HTML and CSS.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="index.html#projects">Latest projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="index.html#contact">Contact & resume</a></li>
+              </ul>
+              <p class="kicker">Tip: Replace these with your GitHub, LinkedIn, or a PDF resume hosted in your repo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p class="kicker">Three sample cards—swap titles, descriptions, and tags for your work.</p>
+
+        <div class="projects">
+          <article class="card project-card">
+            <div class="thumb"><span>Thumbnail A</span></div>
+            <h3>01 • LED Desk Lamp</h3>
+            <p>Rapid prototype of a compact desk lamp with 3D printed shade and USB power. Iteration focused on glare control.</p>
+            <div class="meta">
+              <span class="chip">3D Print</span>
+              <span class="chip">CAD</span>
+              <span class="chip">EE Basics</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="thumb"><span>Thumbnail B</span></div>
+            <h3>02 • Battle Bot Mini</h3>
+            <p>A small, durable chassis for classroom competitions. Tuned for quick assembly and easy part swaps.</p>
+            <div class="meta">
+              <span class="chip">Robotics</span>
+              <span class="chip">Laser</span>
+              <span class="chip">Iteration</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="thumb"><span>Thumbnail C</span></div>
+            <h3>03 • Portfolio Website</h3>
+            <p>This site! Built with semantic HTML and modern CSS. Deployed on GitHub Pages with a custom color system.</p>
+            <div class="meta">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">A11y</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:firstname.lastname@students.belenjesuit.com">firstname.lastname@students.belenjesuit.com</a></p>
+            <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+            <p>Resume: <a href="./resume.pdf">Download PDF</a> (place a file named <code>resume.pdf</code> in your repo)</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <small>© <span id="y">2025</span> Your Name. Built for Honors Design & Innovation.</small>
+        <small><a href="#">Back to top ↑</a></small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
