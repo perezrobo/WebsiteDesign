@@ -1,130 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peter Builds</title>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Senior Portfolio • Cyberpunk</title>
-    <meta name="description" content="Senior portfolio landing page for Design & Innovation — cyberpunk greyscale with yellow accents." />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="body-grid">
-    <header>
-      <div class="wrap nav">
-        <a class="brand" href="index.html">
-          <span class="logo" aria-hidden="true"></span>
-          <span>Senior Portfolio</span>
-        </a>
-        <nav aria-label="Primary">
-          <ul>
-            <li><a href="#senior-project" aria-current="page">Senior Design Project</a></li>
-            <li><a href="#mini-fab">Mini Fabrication Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (PB hex) -->
+  <link rel="icon" href="IMG_0165.JPG" />
+  <meta name="theme-color" content="#0b0b0c" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Peter Builds home">
+        <!-- Wide wordmark in header -->
+        <img src="IMG_0166.JPG" alt="Peter Builds wordmark" class="brand-logo" />
+        <span class="brand-text">Peter Builds</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀︎</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Engineering educator & maker building useful, beautiful things.</h1>
+          <p class="lede">Associate STEAM Director • Robotics mentor • Digital fabrication nerd. This is the hub for projects, tutorials, and the <em>Peter Builds</em> brand.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#work">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- Mascot/mark variant in hero -->
+          <img src="IMG_0159.JPG" alt="Peter Builds mascot" class="hero-portrait" />
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main class="wrap">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-grid">
-          <div class="card">
-            <div class="card-inner">
-              <span class="tag">Belen Jesuit • Honors Design & Innovation</span>
-              <h1>Senior Portfolio</h1>
-              <p class="lead">A clean, easily editable portfolio. HTML + CSS only. Cyberpunk greyscale with neon yellow accents.</p>
-              <hr class="sep" />
-              <p class="kicker">Edit this site by opening <code class="inline">index.html</code> and <code class="inline">styles.css</code> in your repository.</p>
+    <!-- Featured Work grid (keeps your original 3-card layout) -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="grid">
+          <a class="card" href="under-construction.html">
+            <img src="images/newhome/PerezSiteIconsRobot.jpg" alt="DAP-R Robot" />
+            <div class="card-body">
+              <h3>DAP-R Robot</h3>
+              <p>Personal robotics platform, CAD to control systems.</p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-inner">
-              <h2>Quick Links</h2>
-              <ul class="list-clean">
-                <li>⬩ <a href="#senior-project">Senior Design Project</a></li>
-                <li>⬩ <a href="#mini-fab">Mini Fabrication Projects</a></li>
-                <li>⬩ <a href="about.html">About Me</a></li>
-                <li>⬩ <a href="contact.html">Contact Me</a></li>
-              </ul>
+          </a>
+
+          <a class="card" href="mentoredprojects.html">
+            <img src="images/newhome/MentoredPracticumIcon.jpg" alt="Mentored Practicum" />
+            <div class="card-body">
+              <h3>Mentored Practicum</h3>
+              <p>Capstone guidance, shop workflows, and fabrication.</p>
             </div>
-          </div>
+          </a>
+
+          <a class="card" href="fabacademyhome.html">
+            <img src="images/newhome/FabAcademyIcon.jpg" alt="Fab Academy" />
+            <div class="card-body">
+              <h3>Fab Academy</h3>
+              <p>Mini-projects in computer-controlled cutting, 3D, and more.</p>
+            </div>
+          </a>
         </div>
-      </section>
-
-      <!-- SENIOR DESIGN PROJECT -->
-      <section id="senior-project" class="section">
-        <div class="card">
-          <div class="card-inner">
-            <h2>Senior Design Project</h2>
-            <p class="kicker">Key milestones and deliverables for your capstone project.</p>
-            <div class="grid">
-              <article class="card item">
-                <div class="card-inner">
-                  <span class="badge">Milestone</span>
-                  <h3>Problem Statement</h3>
-                  <p>State the problem, users, constraints, and success metrics.</p>
-                  <p><a href="senior/ProblemStatement.html">Open page</a> &nbsp;|&nbsp; <a href="docs/ProblemStatement.pdf">Attach PDF</a></p>
-                </div>
-              </article>
-
-              <article class="card item">
-                <div class="card-inner">
-                  <span class="badge">Review</span>
-                  <h3>Preliminary Design Review</h3>
-                  <p>Concepts explored, tradeoffs, and early tests.</p>
-                  <p><a href="senior/PreliminaryDesignReview.html">Open page</a> &nbsp;|&nbsp; <a href="docs/PDR.pdf">Attach PDF</a></p>
-                </div>
-              </article>
-
-              <article class="card item">
-                <div class="card-inner">
-                  <span class="badge">Review</span>
-                  <h3>Critical Design Review</h3>
-                  <p>Final design details, risks, BOM, and test plans.</p>
-                  <p><a href="senior/CriticalDesignReview.html">Open page</a> &nbsp;|&nbsp; <a href="docs/CDR.pdf">Attach PDF</a></p>
-                </div>
-              </article>
-
-              <article class="card item">
-                <div class="card-inner">
-                  <span class="badge">Presentation</span>
-                  <h3>Final Presentation</h3>
-                  <p>Showcase outcomes, lessons learned, and future work.</p>
-                  <p><a href="senior/FinalPresentation.html">Open page</a> &nbsp;|&nbsp; <a href="docs/FinalPresentation.pdf">Attach PDF</a></p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- MINI FAB PROJECTS -->
-      <section id="mini-fab" class="section">
-        <div class="card">
-          <div class="card-inner">
-            <h2>Mini Fabrication Projects</h2>
-            <p class="kicker">Hands-on modules to build your manufacturing toolkit.</p>
-            <div class="grid">
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Computer Controlled Cutting</h3><p><a href="mini/ComputerControlledCutting.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Embedded Programming</h3><p><a href="mini/EmbeddedProgramming.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>3D Scanning</h3><p><a href="mini/3DScanning.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Computer-Controlled Machining</h3><p><a href="mini/ComputerControlledMachining.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Electronics Production</h3><p><a href="mini/ElectronicsProduction.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Molding and Casting</h3><p><a href="mini/MoldingAndCasting.html">Open page</a></p></div></article>
-              <article class="card item"><div class="card-inner"><span class="badge">Module</span><h3>Wildcard</h3><p><a href="mini/Wildcard.html">Open page</a></p></div></article>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrap foot">
-        <small>© <span id="y">2025</span> Your Name. Senior Portfolio.</small>
-        <small><a href="#top">Back to top ↑</a></small>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- About -->
+    <section class="section section-ink" id="about">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 class="section-title">About Peter</h2>
+            <p>Miami-based engineer, teacher, and roboticist. I lead STEAM initiatives at Belen Jesuit and share open, practical builds for educators and makers.</p>
+            <ul class="bullets">
+              <li>B.S. Biomedical Eng (Mechanical); M.S. Industrial Eng</li>
+              <li>Fab Academy grad • FIRST mentor • Maker Faire Miami</li>
+              <li>Focus: accessible engineering, clean design, real utility</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">10+ yrs</span>
+              <span class="stat-label">in engineering ed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100s</span>
+              <span class="stat-label">of student projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">ideas to build</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form class="form" action="https://formspree.io/f/your-id" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-solid" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Peter Builds</p>
+      <div class="socials">
+        <a aria-label="LinkedIn" href="#">LinkedIn</a>
+        <a aria-label="GitHub" href="#">GitHub</a>
+        <a aria-label="Instagram" href="#">Instagram</a>
+        <a aria-label="YouTube" href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle (default dark). Persist preference.
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const stored = localStorage.getItem('theme');
+    if (stored) {
+      root.setAttribute('data-theme', stored);
+      toggle.textContent = stored === 'dark' ? '☀︎' : '☾';
+    } else {
+      root.setAttribute('data-theme', 'dark');
+      toggle.textContent = '☀︎';
+    }
+    toggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      toggle.textContent = next === 'dark' ? '☀︎' : '☾';
+    });
+  </script>
+</body>
 </html>
